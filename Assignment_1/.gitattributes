@@ -1,3 +1,17 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
 *.bin filter=lfs diff=lfs merge=lfs -text
+output.log filter=lfs diff=lfs merge=lfs -text
+models/codet5-finetuned/checkpoint-120000/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/codet5-finetuned/checkpoint-120000/optimizer.pt filter=lfs diff=lfs merge=lfs -text
+models/codet5-finetuned/checkpoint-120000/.optimizer.pt.S0N0gewZJk filter=lfs diff=lfs merge=lfs -text
+models/codet5-finetuned/best_model/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/codet5-finetuned/checkpoint-80000/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/codet5-finetuned/checkpoint-80000/optimizer.pt filter=lfs diff=lfs merge=lfs -text
+models/codet5-pretrained/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/codet5-pretrained/checkpoint-75000/model.safetensors filter=lfs diff=lfs merge=lfs -text
+models/codet5-pretrained/checkpoint-75000/optimizer.pt filter=lfs diff=lfs merge=lfs -text
+collected_data/python_functions.csv filter=lfs diff=lfs merge=lfs -text
+collected_data/finetune_train.csv filter=lfs diff=lfs merge=lfs -text
+collected_data/tokenizer_train_corpus.txt filter=lfs diff=lfs merge=lfs -text
+collected_data/pretrain_dataset.csv filter=lfs diff=lfs merge=lfs -text
