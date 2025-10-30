@@ -1,0 +1,33 @@
+
+    Dataset Collection Summary (Python Functions):
+
+    Configuration:
+    - Repository List: repositories.txt
+    - Clone Directory: repos
+    - Output CSV: collected_data/python_functions.csv
+    - Maximum Functions Target: 250000
+
+    Processing Statistics:
+    - Total Python files scanned: 45630
+    - Total Python files successfully parsed (AST): 45460
+    - Files skipped due to SyntaxError: 170
+    - Files skipped due to other errors: 0
+
+    Function Extraction Statistics (Raw):
+    - Total functions initially extracted (before cleaning): 373018
+
+    Function Cleaning Statistics:
+    - Functions removed:
+        - Too short (<3 lines of actual code): 33462
+        - Too long (>100 lines of actual code): 4597
+        - Empty (after stripping whitespace): 0
+        - Invalid line numbers/structure: 0
+        - Duplicates (based on code hash): 84959
+          (This is an estimate of only *deduplicated* functions that passed other filters. The true duplicate count is more complex to show here.)
+          
+    Final Dataset:
+    - Total unique, cleaned functions written to CSV: 250000
+    
+    Each row in 'collected_data/python_functions.csv' represents a cleaned Python function and includes:
+    repo_name, repo_url, file_path, function_name, start_line, end_line, signature, original_code, code_tokens (simple split).
+    
